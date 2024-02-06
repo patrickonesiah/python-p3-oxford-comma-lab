@@ -3,8 +3,6 @@ def oxford_comma(items):
         return ", ".join(items)
     elif len(items) == 2:
         return " and ".join(items)
-    elif len(items) == 3:
-        return ", and ".join([", ".join(items[:-1]),items[-1]])
-    else:
+    elif len(items) >= 3:
         return ", and ".join([", ".join(items[:-1]),items[-1]])
 
